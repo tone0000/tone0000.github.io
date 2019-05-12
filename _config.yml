@@ -8,12 +8,12 @@ subtitle: 开心一点
 description:
 keywords:
 author: 笑笑魂
-language:
+language: zh-CN
 timezone:
 
 # URL
 ## If your site is put in a subdirectory, set url as 'http://yoursite.com/child' and root as '/child/'
-url: http://yoursite.com
+url: https://tone0000.github.io
 root: /
 permalink: :year/:month/:day/:title/
 permalink_defaults:
@@ -50,7 +50,7 @@ highlight:
 # order_by: Posts order. (Order by date descending by default)
 index_generator:
   path: ''
-  per_page: 10
+  per_page: 18
   order_by: -date
   
 # Category & Tag
