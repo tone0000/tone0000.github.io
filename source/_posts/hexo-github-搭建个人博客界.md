@@ -15,9 +15,9 @@ coverImg: https://tc-1258808238.cos.ap-chengdu.myqcloud.com/004.jpg
 
 然后你得下载 [nodejs](http://nodejs.cn/download/)  windows mac linux 甚至Android(需要下载termux)都可以安装
 
-接着在你的GitHub里创建个仓库借个图![](https://img-blog.csdn.net/20170827113226349?watermark/2/text/aHR0cDovL2Jsb2cuY3Nkbi5uZXQvQWluVXNlcg==/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70/gravity/Center)
+接着在你的GitHub里创建个仓库借个图![](https://tc-1258808238.cos.ap-chengdu.myqcloud.com/A-03.jpg)
 
-然后window的下载[git bash](https://gitforwindows.org/) 安装的时候一路next就行（ps：不要装带c盘，上面那个nodejs也是，不然每次都要开管理员模式 π__π ）。Linux 、mac-os 、Android 、请apt install、yum install、pacman -S 、brew 、pkg install git
+然后window的下载[git bash](https://gitforwindows.org/) 安装的时候一路next就行（ps：不要装在c盘，上面那个nodejs也是，不然每次都要开管理员模式 π__π ）。Linux 、mac-os 、Android 、请apt install、yum install、pacman -S 、brew 、pkg install git
 
 ## 嗯。。。敲代码？？
 
