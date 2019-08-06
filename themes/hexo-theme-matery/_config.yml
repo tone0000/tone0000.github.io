@@ -114,7 +114,7 @@ code:
 reward:
   enable: true
   title: 谢谢你请我喝咖啡
-  wechat: /medias/reward/wechat.jpg
+  wechat: /medias/reward/wechat.png
   alipay: /medias/reward/alipay.jpg
 
 # Whether to activate the copyright information of the blog and author when copying the post content.
