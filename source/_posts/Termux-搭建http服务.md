@@ -29,35 +29,40 @@ Termux是一个Android的linux模拟器，能在手机模拟linux环境。
 sed -i 's@^\(deb.*stable main\)$@#\1\ndeb
 https://mirrors.tuna.tsinghua.edu.cn/termux stable main@' 
 $PREFIX/etc/apt/sources.list
+
 pkg up
 ```
 
 访问手机存储
 
-```bash
+```shell
 termux-setup-storag
 ```
 
+
+
 Termux 提供两种包管理工具apt 和 pkg 
 
-```bash
+```shell
 # 安装软件包
-$ pkg install [package name]
+pkg install [package name]
 
 # 卸载软件包
-$ pkg uninstall [package name]
+pkg uninstall [package name]
 
 # 列出所有软件包
-$ pkg list-all
+pkg list-all
 ```
 
-==pkg== 本身是基于==apt== 的，相当于在apt install 之前先进行了==apti update== 用来保证下载的软件都是新的。
+
+
+<code>pkg</code>  本身是基于<code>apt</code>  的，相当于在apt install 之前先进行了<code>apt update</code> 用来保证下载的软件都是新的。
 
 ## 三、正式开始
 
 安装nodejs
 
-```bash
+```shell
 apt install nodejs
 ```
 
@@ -65,13 +70,13 @@ apt install nodejs
 
 搭建http-server服务
 
-```bash
+```shell
 npm install -g http-server
 ```
 
 然后http-server就可以执行了
 
-```bash
+```shell
 http-server #这个是在根目录
 http-server storge/download #这个是指定要显示的目录
 hs #这个是简写也可以运行
@@ -87,16 +92,14 @@ hs #这个是简写也可以运行
 
 当然还有Python大法
 
-```bash
+```shell
 apt install python
 ```
 
 ```python
-python -m http.server 8080 
 #这个要指定目录的话请直接在你想要打开的目录里开启此服务
+python -m http.server 8080 
 ```
-
-
 
 Termux 还可以架设 [Apache 服务器](http://www.termuxtutorials.ga/2018/06/how-to-install-apache2-in-termux-termux.html)，或者通过[其他途径](https://wiki.termux.com/wiki/Remote_Access)（FTP、SSH、Rsync）访问手机
 
