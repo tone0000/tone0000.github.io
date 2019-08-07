@@ -4,12 +4,12 @@
 
 <head><meta name="generator" content="Hexo 3.8.0">
     <meta charset="utf-8">
-    <meta name="keywords" content="hexo+github 搭建个人博客, 人间不值得">
+    <meta name="keywords" content="Termux 搭建http服务, 人间不值得">
     <meta name="description" content="## 
-准备工作先放个 官方文档 
-然后你得下载 nodejs  windows mac linux 甚至Android(需要下载termux)都可以安装
-接着在你的GitHub里创建个仓库借个图
-然后window的下载git bash 安">
+
+一、Termux是个啥？Termux是一个Android的linux模拟器，能在手机模拟linux环境。
+二、准备工作首先国内使用要换源，这里使用的是清华源，这是官方文档 也可以直接复制代码
+12sed -i &#39;s@^\(deb.">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
     <meta name="renderer" content="webkit|ie-stand|ie-comp">
@@ -17,7 +17,7 @@
     <meta name="format-detection" content="telephone=no">
     <meta name="apple-mobile-web-app-capable" content="yes">
     <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
-    <title>hexo+github 搭建个人博客 | 人间不值得</title>
+    <title>Termux 搭建http服务 | 人间不值得</title>
     <link rel="icon" type="image/png" href="/favicon.png">
 
     <link rel="stylesheet" type="text/css" href="/libs/awesome/css/font-awesome.min.css">
@@ -201,13 +201,13 @@
 
 
 
-<div class="bg-cover pd-header post-cover" style="background-image: url('https://tc-1258808238.cos.ap-chengdu.myqcloud.com/004.jpg')">
+<div class="bg-cover pd-header post-cover" style="background-image: url('https://tc-1258808238.cos.ap-chengdu.myqcloud.com/050.jpg')">
     <div class="container">
         <div class="row">
             <div class="col s12 m12 l12">
                 <div class="brand">
                     <div class="description center-align post-title">
-                        hexo+github 搭建个人博客
+                        Termux 搭建http服务
                     </div>
                 </div>
             </div>
@@ -318,8 +318,8 @@
                     
                     <div class="article-tag">
                         
-                            <a href="/tags/hexo/" target="_blank">
-                                <span class="chip bg-color">hexo</span>
+                            <a href="/tags/Termux/" target="_blank">
+                                <span class="chip bg-color">Termux</span>
                             </a>
                         
                     </div>
@@ -333,21 +333,21 @@
             <div class="post-info">
                 <div class="post-date info-break-policy">
                     <i class="fa fa-calendar-minus-o fa-fw"></i>发布日期:&nbsp;&nbsp;
-                    2019-08-06
+                    2019-08-07
                 </div>
 
                 
                     
                     <div class="info-break-policy">
                         <i class="fa fa-file-word-o fa-fw"></i>文章字数:&nbsp;&nbsp;
-                        573
+                        422
                     </div>
                     
 
                     
                     <div class="info-break-policy">
                         <i class="fa fa-clock-o fa-fw"></i>阅读时长:&nbsp;&nbsp;
-                        2 分
+                        1 分
                     </div>
                     
                 
@@ -364,41 +364,31 @@
         <div class="card-content article-card-content">
             <div id="articleContent">
                 <p>## </p>
-<h2 id="准备工作"><a href="#准备工作" class="headerlink" title="准备工作"></a>准备工作</h2><p>先放个 <a href="https://hexo.io/zh-cn/docs/" target="_blank" rel="noopener">官方文档</a> </p>
-<p>然后你得下载 <a href="http://nodejs.cn/download/" target="_blank" rel="noopener">nodejs</a>  windows mac linux 甚至Android(需要下载termux)都可以安装</p>
-<p>接着在你的GitHub里创建个仓库借个图<img src="https://tc-1258808238.cos.ap-chengdu.myqcloud.com/A-03.jpg" alt></p>
-<p>然后window的下载<a href="https://gitforwindows.org/" target="_blank" rel="noopener">git bash</a> 安装的时候一路next就行（ps：不要装在c盘，上面那个nodejs也是，不然每次都要开管理员模式 π__π ）。Linux 、mac-os 、Android 、请apt install、yum install、pacman -S 、brew 、pkg install git</p>
-<h2 id="嗯。。。敲代码？？"><a href="#嗯。。。敲代码？？" class="headerlink" title="嗯。。。敲代码？？"></a>嗯。。。敲代码？？</h2><p>假设你的软件都下好了，且都添加了那就开始吧</p>
-<p>先设置下你的git bash</p>
-<figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">ssh-keygen -t rsa -C "你自己注册GitHub的邮箱"  <span class="comment">&lt;!--生成你的ssh密钥--&gt;</span></span><br></pre></td></tr></table></figure>
-<p>记得添加到你的GitHub设置里的ssh里贴个图给你看看<img src="https://tc-1258808238.cos.ap-chengdu.myqcloud.com/01.png" alt></p>
-<p>继续敲代码 </p>
-<figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">ssh -T git@github.com <span class="tag">&lt;<span class="name">--!用来测试你的ssh配置是否正确--</span>&gt;</span></span><br></pre></td></tr></table></figure>
-<p>如果显示你的GitHub用户名并提示successfully authenticated 那就:ok_hand: </p>
-<figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">git config --global user.name "你的GitHub登陆名"</span><br><span class="line">git config --global user.email "你的GitHub注册邮箱" <span class="comment">&lt;!-- 等会上传到仓库的验证消息 --&gt;</span></span><br></pre></td></tr></table></figure>
-<p>在敲npm代码前友情提示，国内直接连接npm服务器的速度可以自行体验下，当然如果有代理的话那就继续。:sweat_smile: ps：国内有<a href="http://npm.taobao.org/" target="_blank" rel="noopener">淘宝镜像</a> 加个 <strong>c</strong>  </p>
-<p>继续下一步</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">npm install hexo-cli -g</span><br><span class="line">hexo init blog</span><br><span class="line">cd blog</span><br><span class="line">npm install</span><br><span class="line">npm install hexo-deployer-git --save</span><br></pre></td></tr></table></figure>
-<p>嗯。没错和官方文档一样的 :smile:</p>
-<p>文件弄好之后就按照官方文档修改_config.yml  这个文件尤其最后这个仓库地址<img src="https://tc-1258808238.cos.ap-chengdu.myqcloud.com/02.png" alt></p>
-<p>然后就可以</p>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">hexo g -d</span><br></pre></td></tr></table></figure>
-<h2 id="多终端使用"><a href="#多终端使用" class="headerlink" title="多终端使用"></a>多终端使用</h2><p>先在github上创建一个分支类似于hexo。现在加上你原来的分支一共有俩 master和hexo</p>
-<p>hexo用来存放网站配置node模块 </p>
-<p>master用来存hexo渲染过的文章</p>
-<p>本地有的话直接复制本地的把ssh密钥改下就成</p>
-<p>本地丢失的话就按照之前的步骤本地初始化一个文件夹</p>
-<p>再git clone hexo分支</p>
-<p>再用hexo 分支 覆盖本地的文件夹就 :white_check_mark:</p>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">git add .</span><br><span class="line">git commit -m <span class="string">"..."</span> <span class="comment">#双引号里填你对这个网站做了啥</span></span><br><span class="line">git push origin hexo</span><br><span class="line">hexo g -d</span><br></pre></td></tr></table></figure>
-<p>用这个步骤上传。</p>
-<blockquote>
-<p>ps：可以用自己的模板建立文章直接在 <strong>scaffolds</strong> 建立md文件就好 然后 </p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">&gt; hexo new post2 &quot;&quot;</span><br><span class="line">&gt;</span><br></pre></td></tr></table></figure>
-</blockquote>
-<blockquote>
-</blockquote>
-<p><img src="https://tc-1258808238.cos.ap-chengdu.myqcloud.com/068.jpg" alt></p>
+<p><img src="https://tc-1258808238.cos.ap-chengdu.myqcloud.com/060.jpg" alt></p>
+<h2 id="一、Termux是个啥？"><a href="#一、Termux是个啥？" class="headerlink" title="一、Termux是个啥？"></a>一、Termux是个啥？</h2><p>Termux是一个Android的linux模拟器，能在手机模拟linux环境。</p>
+<h2 id="二、准备工作"><a href="#二、准备工作" class="headerlink" title="二、准备工作"></a>二、准备工作</h2><p>首先国内使用要换源，这里使用的是清华源，这是<a href="https://mirrors.tuna.tsinghua.edu.cn/help/termux/" target="_blank" rel="noopener">官方文档</a> 也可以直接复制代码</p>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">sed -i 's@^\(deb.*stable main\)$@#\1\ndeb https://mirrors.tuna.tsinghua.edu.cn/termux stable main@' $PREFIX/etc/apt/sources.list</span><br><span class="line">pkg up</span><br></pre></td></tr></table></figure>
+<p>访问手机存储</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">termux-setup-storag</span><br></pre></td></tr></table></figure>
+<p>Termux 提供两种包管理工具apt 和 pkg </p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># 安装软件包</span></span><br><span class="line">$ pkg install [package name]</span><br><span class="line"></span><br><span class="line"><span class="comment"># 卸载软件包</span></span><br><span class="line">$ pkg uninstall [package name]</span><br><span class="line"></span><br><span class="line"><span class="comment"># 列出所有软件包</span></span><br><span class="line">$ pkg list-all</span><br></pre></td></tr></table></figure>
+<p>==pkg== 本身是基于==apt== 的，相当于在apt install 之前先进行了==apti update== 用来保证下载的软件都是新的。</p>
+<h2 id="三、正式开始"><a href="#三、正式开始" class="headerlink" title="三、正式开始"></a>三、正式开始</h2><p>安装nodejs</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">apt install nodejs</span><br></pre></td></tr></table></figure>
+<p>记得给npm换个<a href="https://npm.taobao.org/" target="_blank" rel="noopener">国内的软件源</a> </p>
+<p>搭建http-server服务</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">npm install -g http-server</span><br></pre></td></tr></table></figure>
+<p>然后http-server就可以执行了</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">http-server <span class="comment">#这个是在根目录</span></span><br><span class="line">http-server storge/download <span class="comment">#这个是指定要显示的目录</span></span><br><span class="line">hs <span class="comment">#这个是简写也可以运行</span></span><br></pre></td></tr></table></figure>
+<p>这个是该命令可以加的参数<img src="https://tc-1258808238.cos.ap-chengdu.myqcloud.com/A-04.png" alt></p>
+<p>在一个局域网里直接提供IP地址就行，不在的话可以开机手机热点让其他设备链接热点，在浏览器访问IP地址</p>
+<p>下面图片里的192.168.2.6:8080就是其他设备访问你的网址，将其输在浏览器里就可以访问并从中下载文件了</p>
+<p><img src="https://tc-1258808238.cos.ap-chengdu.myqcloud.com/A-05.png" alt></p>
+<p>当然还有Python大法</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">apt install python</span><br></pre></td></tr></table></figure>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">python -m http.server <span class="number">8080</span> <span class="comment">#这个要指定目录的话请直接在你想要打开的目录里开启此服务</span></span><br></pre></td></tr></table></figure>
+<p>Termux 还可以架设 <a href="http://www.termuxtutorials.ga/2018/06/how-to-install-apache2-in-termux-termux.html" target="_blank" rel="noopener">Apache 服务器</a>，或者通过<a href="https://wiki.termux.com/wiki/Remote_Access" target="_blank" rel="noopener">其他途径</a>（FTP、SSH、Rsync）访问手机</p>
+<p>​                                                            完结撒花  :tada: </p>
 
             </div>
             <hr>
@@ -554,9 +544,9 @@
             </div>
             <br>
             <span xmlns:dct="http://purl.org/dc/terms/" href="http://purl.org/dc/dcmitype/Text" property="dct:title" rel="dct:type">
-                    《hexo+github 搭建个人博客》
+                    《Termux 搭建http服务》
                 </span> 由
-            <a xmlns:cc="http://creativecommons.org/ns#" href="/2019/08/06/hexo-github-搭建个人博客界/" property="cc:attributionName" rel="cc:attributionURL">
+            <a xmlns:cc="http://creativecommons.org/ns#" href="/2019/08/07/Termux-搭建http服务/" property="cc:attributionName" rel="cc:attributionURL">
                 笑笑魂
             </a> 采用
             <a rel="license" href="https://creativecommons.org/licenses/by/4.0/deed.zh">
@@ -619,7 +609,8 @@
         
         <div class="article col s12 m6 overflow-policy" data-aos="fade-up">
             <div class="article-badge left-badge text-color">
-                <i class="fa fa-chevron-left"></i>&nbsp;上一篇</div>
+                <i class="fa fa-dot-circle-o"></i>&nbsp;本篇
+            </div>
             <div class="card">
                 <a href="/2019/08/07/Termux-搭建http服务/">
                     <div class="card-image">
@@ -640,9 +631,9 @@
                         
                     </div>
                     <div class="publish-info">
-                        <span class="publish-date">
-                            <i class="fa fa-clock-o fa-fw icon-date"></i>2019-08-07
-                        </span>
+                            <span class="publish-date">
+                                <i class="fa fa-clock-o fa-fw icon-date"></i>2019-08-07
+                            </span>
                         <span class="publish-author">
                             
                             <i class="fa fa-user fa-fw"></i>
@@ -651,6 +642,7 @@
                         </span>
                     </div>
                 </div>
+
                 
                 <div class="card-action article-tags">
                     
@@ -669,28 +661,27 @@
                 下一篇&nbsp;<i class="fa fa-chevron-right"></i>
             </div>
             <div class="card">
-                <a href="/2019/05/15/四级备考/">
+                <a href="/2019/08/06/hexo-github-搭建个人博客界/">
                     <div class="card-image">
                         
-                        <img src="https://tc-1258808238.cos.ap-chengdu.myqcloud.com/008.jpg" class="responsive-img" alt="四级备考">
+                        <img src="https://tc-1258808238.cos.ap-chengdu.myqcloud.com/004.jpg" class="responsive-img" alt="hexo+github 搭建个人博客">
                         
-                        <span class="card-title">四级备考</span>
+                        <span class="card-title">hexo+github 搭建个人博客</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
                     <div class="summary block-with-text">
                         
-                            
-及格要求四級分數分佈（聽力35%閱讀35%翻譯和寫作30%）
-主要目的複習聽力， 其次閱讀。
-聽力訓練真题录音单曲循环+尽力识别后对照听力原文（也叫听力脚本）。
-1.先将真题段落反复循环播放。
-2.验看听力脚本（脚本就是听力的对白原文文字
+                            ## 
+准备工作先放个 官方文档 
+然后你得下载 nodejs  windows mac linux 甚至Android(需要下载termux)都可以安装
+接着在你的GitHub里创建个仓库借个图
+然后window的下载git bash 安
                         
                     </div>
                     <div class="publish-info">
                             <span class="publish-date">
-                                <i class="fa fa-clock-o fa-fw icon-date"></i>2019-05-15
+                                <i class="fa fa-clock-o fa-fw icon-date"></i>2019-08-06
                             </span>
                         <span class="publish-author">
                             
@@ -703,8 +694,8 @@
                 
                 <div class="card-action article-tags">
                     
-                    <a href="/tags/exam/" target="_blank">
-                        <span class="chip bg-color">exam</span>
+                    <a href="/tags/hexo/" target="_blank">
+                        <span class="chip bg-color">hexo</span>
                     </a>
                     
                 </div>

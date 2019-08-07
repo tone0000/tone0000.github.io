@@ -26,7 +26,9 @@ Termux是一个Android的linux模拟器，能在手机模拟linux环境。
 首先国内使用要换源，这里使用的是清华源，这是[官方文档](https://mirrors.tuna.tsinghua.edu.cn/help/termux/) 也可以直接复制代码
 
 ``` shell
-sed -i 's@^\(deb.*stable main\)$@#\1\ndeb https://mirrors.tuna.tsinghua.edu.cn/termux stable main@' $PREFIX/etc/apt/sources.list
+sed -i 's@^\(deb.*stable main\)$@#\1\ndeb
+https://mirrors.tuna.tsinghua.edu.cn/termux stable main@' 
+$PREFIX/etc/apt/sources.list
 pkg up
 ```
 
@@ -90,7 +92,8 @@ apt install python
 ```
 
 ```python
-python -m http.server 8080 #这个要指定目录的话请直接在你想要打开的目录里开启此服务
+python -m http.server 8080 
+#这个要指定目录的话请直接在你想要打开的目录里开启此服务
 ```
 
 
