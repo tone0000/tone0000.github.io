@@ -367,11 +367,11 @@
 <p><img src="https://tc-1258808238.cos.ap-chengdu.myqcloud.com/060.jpg" alt></p>
 <h2 id="一、Termux是个啥？"><a href="#一、Termux是个啥？" class="headerlink" title="一、Termux是个啥？"></a>一、Termux是个啥？</h2><p>Termux是一个Android的linux模拟器，能在手机模拟linux环境。</p>
 <h2 id="二、准备工作"><a href="#二、准备工作" class="headerlink" title="二、准备工作"></a>二、准备工作</h2><p>首先国内使用要换源，这里使用的是清华源，这是<a href="https://mirrors.tuna.tsinghua.edu.cn/help/termux/" target="_blank" rel="noopener">官方文档</a> 也可以直接复制代码</p>
-<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">sed -i 's@^\(deb.*stable main\)$@#\1\ndeb</span><br><span class="line">https://mirrors.tuna.tsinghua.edu.cn/termux stable main@' </span><br><span class="line"><span class="meta">$</span>PREFIX/etc/apt/sources.list</span><br><span class="line"></span><br><span class="line">pkg up</span><br></pre></td></tr></table></figure>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">sed -i 's@^\(deb.*stable main\)$@#\1\ndeb</span><br><span class="line">https://mirrors.tuna.tsinghua.edu.cn/termux stable main@' </span><br><span class="line"><span class="meta">$</span><span class="bash">PREFIX/etc/apt/sources.list</span></span><br><span class="line"></span><br><span class="line">pkg up</span><br></pre></td></tr></table></figure>
 <p>访问手机存储</p>
 <figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">termux-setup-storag</span><br></pre></td></tr></table></figure>
 <p>Termux 提供两种包管理工具apt 和 pkg </p>
-<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#</span> 安装软件包</span><br><span class="line">pkg install [package name]</span><br><span class="line"></span><br><span class="line"><span class="meta">#</span> 卸载软件包</span><br><span class="line">pkg uninstall [package name]</span><br><span class="line"></span><br><span class="line"><span class="meta">#</span> 列出所有软件包</span><br><span class="line">pkg list-all</span><br></pre></td></tr></table></figure>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#</span><span class="bash"> 安装软件包</span></span><br><span class="line">pkg install [package name]</span><br><span class="line"></span><br><span class="line"><span class="meta">#</span><span class="bash"> 卸载软件包</span></span><br><span class="line">pkg uninstall [package name]</span><br><span class="line"></span><br><span class="line"><span class="meta">#</span><span class="bash"> 列出所有软件包</span></span><br><span class="line">pkg list-all</span><br></pre></td></tr></table></figure>
 <p><code>pkg</code>  本身是基于<code>apt</code>  的，相当于在apt install 之前先进行了<code>apt update</code> 用来保证下载的软件都是新的。</p>
 <h2 id="三、正式开始"><a href="#三、正式开始" class="headerlink" title="三、正式开始"></a>三、正式开始</h2><p>安装nodejs</p>
 <figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">apt install nodejs</span><br></pre></td></tr></table></figure>
@@ -609,31 +609,27 @@
         
         <div class="article col s12 m6 overflow-policy" data-aos="fade-up">
             <div class="article-badge left-badge text-color">
-                <i class="fa fa-dot-circle-o"></i>&nbsp;本篇
-            </div>
+                <i class="fa fa-chevron-left"></i>&nbsp;上一篇</div>
             <div class="card">
-                <a href="/2019/08/07/Termux-搭建http服务/">
+                <a href="/2019/09/30/python-函数/">
                     <div class="card-image">
                         
-                        <img src="https://tc-1258808238.cos.ap-chengdu.myqcloud.com/050.jpg" class="responsive-img" alt="Termux 搭建http服务">
+                        <img src="https://tc-1258808238.cos.ap-chengdu.myqcloud.com/068.jpg" class="responsive-img" alt="python-函数">
                         
-                        <span class="card-title">Termux 搭建http服务</span>
+                        <span class="card-title">python-函数</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
                     <div class="summary block-with-text">
                         
-                            ## 
+                            1234def cyclider_volume(height,radius):    pi =3.1415926    return height * pi * radius ** 2cylinder_volume(10,3)
 
-一、Termux是个啥？Termux是一个Android的linux模拟器，能在手机模拟linux环境。
-二、准备工作首先国内使用要换源，这里使用的是清华源，这是官方文档 也可以直接复制代码
-12345sed -i 's@^\(d
                         
                     </div>
                     <div class="publish-info">
-                            <span class="publish-date">
-                                <i class="fa fa-clock-o fa-fw icon-date"></i>2019-08-07
-                            </span>
+                        <span class="publish-date">
+                            <i class="fa fa-clock-o fa-fw icon-date"></i>2019-09-30
+                        </span>
                         <span class="publish-author">
                             
                             <i class="fa fa-user fa-fw"></i>
@@ -642,12 +638,11 @@
                         </span>
                     </div>
                 </div>
-
                 
                 <div class="card-action article-tags">
                     
-                    <a href="/tags/Termux/" target="_blank">
-                        <span class="chip bg-color">Termux</span>
+                    <a href="/tags/code/" target="_blank">
+                        <span class="chip bg-color">code</span>
                     </a>
                     
                 </div>
@@ -853,7 +848,7 @@
 
             
                 &nbsp;<i class="fa fa-area-chart"></i>&nbsp;站点总字数:&nbsp;
-                <span class="white-color">1.8k</span>
+                <span class="white-color">3.3k</span>
             
 
             

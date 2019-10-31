@@ -4,12 +4,21 @@
 
 <head><meta name="generator" content="Hexo 3.8.0">
     <meta charset="utf-8">
-    <meta name="keywords" content="hexo+github 搭建个人博客, 人间不值得">
-    <meta name="description" content="## 
-准备工作先放个 官方文档 
-然后你得下载 nodejs  windows mac linux 甚至Android(需要下载termux)都可以安装
-接着在你的GitHub里创建个仓库借个图
-然后window的下载git bash 安">
+    <meta name="keywords" content="学习技能, 人间不值得">
+    <meta name="description" content="学习技能记笔记
+注意事项：
+用你自己能够理解的话记笔记。
+用于考试和以后应用的信息。
+
+
+步骤： 
+提前预习
+浏览目录
+老师提醒的重点
+重要思想： 总结、回顾、结论之类的。
+列表
+术语和定义
+例子：例子的细节，运用了什么方法和用这个方法的理">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
     <meta name="renderer" content="webkit|ie-stand|ie-comp">
@@ -17,7 +26,7 @@
     <meta name="format-detection" content="telephone=no">
     <meta name="apple-mobile-web-app-capable" content="yes">
     <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
-    <title>hexo+github 搭建个人博客 | 人间不值得</title>
+    <title>学习技能 | 人间不值得</title>
     <link rel="icon" type="image/png" href="/favicon.png">
 
     <link rel="stylesheet" type="text/css" href="/libs/awesome/css/font-awesome.min.css">
@@ -201,13 +210,13 @@
 
 
 
-<div class="bg-cover pd-header post-cover" style="background-image: url('https://tc-1258808238.cos.ap-chengdu.myqcloud.com/004.jpg')">
+<div class="bg-cover pd-header post-cover" style="background-image: url('https://tc-1258808238.cos.ap-chengdu.myqcloud.com/068.jpg')">
     <div class="container">
         <div class="row">
             <div class="col s12 m12 l12">
                 <div class="brand">
                     <div class="description center-align post-title">
-                        hexo+github 搭建个人博客
+                        学习技能
                     </div>
                 </div>
             </div>
@@ -318,8 +327,8 @@
                     
                     <div class="article-tag">
                         
-                            <a href="/tags/hexo/" target="_blank">
-                                <span class="chip bg-color">hexo</span>
+                            <a href="/tags/学习/" target="_blank">
+                                <span class="chip bg-color">学习</span>
                             </a>
                         
                     </div>
@@ -333,21 +342,21 @@
             <div class="post-info">
                 <div class="post-date info-break-policy">
                     <i class="fa fa-calendar-minus-o fa-fw"></i>发布日期:&nbsp;&nbsp;
-                    2019-08-06
+                    2019-10-31
                 </div>
 
                 
                     
                     <div class="info-break-policy">
                         <i class="fa fa-file-word-o fa-fw"></i>文章字数:&nbsp;&nbsp;
-                        573
+                        1.4k
                     </div>
                     
 
                     
                     <div class="info-break-policy">
                         <i class="fa fa-clock-o fa-fw"></i>阅读时长:&nbsp;&nbsp;
-                        2 分
+                        4 分
                     </div>
                     
                 
@@ -363,42 +372,177 @@
         <hr class="clearfix">
         <div class="card-content article-card-content">
             <div id="articleContent">
-                <p>## </p>
-<h2 id="准备工作"><a href="#准备工作" class="headerlink" title="准备工作"></a>准备工作</h2><p>先放个 <a href="https://hexo.io/zh-cn/docs/" target="_blank" rel="noopener">官方文档</a> </p>
-<p>然后你得下载 <a href="http://nodejs.cn/download/" target="_blank" rel="noopener">nodejs</a>  windows mac linux 甚至Android(需要下载termux)都可以安装</p>
-<p>接着在你的GitHub里创建个仓库借个图<img src="https://tc-1258808238.cos.ap-chengdu.myqcloud.com/A-03.jpg" alt></p>
-<p>然后window的下载<a href="https://gitforwindows.org/" target="_blank" rel="noopener">git bash</a> 安装的时候一路next就行（ps：不要装在c盘，上面那个nodejs也是，不然每次都要开管理员模式 π__π ）。Linux 、mac-os 、Android 、请apt install、yum install、pacman -S 、brew 、pkg install git</p>
-<h2 id="嗯。。。敲代码？？"><a href="#嗯。。。敲代码？？" class="headerlink" title="嗯。。。敲代码？？"></a>嗯。。。敲代码？？</h2><p>假设你的软件都下好了，且都添加了那就开始吧</p>
-<p>先设置下你的git bash</p>
-<figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">ssh-keygen -t rsa -C "你自己注册GitHub的邮箱"  <span class="comment">&lt;!--生成你的ssh密钥--&gt;</span></span><br></pre></td></tr></table></figure>
-<p>记得添加到你的GitHub设置里的ssh里贴个图给你看看<img src="https://tc-1258808238.cos.ap-chengdu.myqcloud.com/01.png" alt></p>
-<p>继续敲代码 </p>
-<figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">ssh -T git@github.com <span class="tag">&lt;<span class="name">--!用来测试你的ssh配置是否正确--</span>&gt;</span></span><br></pre></td></tr></table></figure>
-<p>如果显示你的GitHub用户名并提示successfully authenticated 那就:ok_hand: </p>
-<figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">git config --global user.name "你的GitHub登陆名"</span><br><span class="line">git config --global user.email "你的GitHub注册邮箱" <span class="comment">&lt;!-- 等会上传到仓库的验证消息 --&gt;</span></span><br></pre></td></tr></table></figure>
-<p>在敲npm代码前友情提示，国内直接连接npm服务器的速度可以自行体验下，当然如果有代理的话那就继续。:sweat_smile: ps：国内有<a href="http://npm.taobao.org/" target="_blank" rel="noopener">淘宝镜像</a> 加个 <strong>c</strong>  </p>
-<p>继续下一步</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">npm install hexo-cli -g</span><br><span class="line">hexo init blog</span><br><span class="line">cd blog</span><br><span class="line">npm install</span><br><span class="line">npm install hexo-deployer-git --save</span><br></pre></td></tr></table></figure>
-<p>嗯。没错和官方文档一样的 :smile:</p>
-<p>文件弄好之后就按照官方文档修改_config.yml  这个文件尤其最后这个仓库地址<img src="https://tc-1258808238.cos.ap-chengdu.myqcloud.com/02.png" alt></p>
-<p>然后就可以</p>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">hexo g -d</span><br></pre></td></tr></table></figure>
-<h2 id="多终端使用"><a href="#多终端使用" class="headerlink" title="多终端使用"></a>多终端使用</h2><p>先在github上创建一个分支类似于hexo。现在加上你原来的分支一共有俩 master和hexo</p>
-<p>hexo用来存放网站配置node模块 </p>
-<p>master用来存hexo渲染过的文章</p>
-<p>本地有的话直接复制本地的把ssh密钥改下就成</p>
-<p>本地丢失的话就按照之前的步骤本地初始化一个文件夹</p>
-<p>再git clone hexo分支</p>
-<p>再用hexo 分支 覆盖本地的文件夹就 :white_check_mark:</p>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">git add .</span><br><span class="line">git commit -m <span class="string">"..."</span> <span class="comment">#双引号里填你对这个网站做了啥</span></span><br><span class="line">git push origin hexo</span><br><span class="line">hexo g -d</span><br></pre></td></tr></table></figure>
-<p>用这个步骤上传。</p>
-<blockquote>
-<p>ps：可以用自己的模板建立文章直接在 <strong>scaffolds</strong> 建立md文件就好 然后 </p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">&gt; hexo new post2 &quot;&quot;</span><br><span class="line">&gt;</span><br></pre></td></tr></table></figure>
-</blockquote>
-<blockquote>
-</blockquote>
-<p><img src="https://tc-1258808238.cos.ap-chengdu.myqcloud.com/068.jpg" alt></p>
+                <h1 id="学习技能"><a href="#学习技能" class="headerlink" title="学习技能"></a>学习技能</h1><h2 id="记笔记"><a href="#记笔记" class="headerlink" title="记笔记"></a>记笔记</h2><ol>
+<li>注意事项：<ol>
+<li>用你自己能够理解的话记笔记。</li>
+<li>用于考试和以后应用的信息。</li>
+</ol>
+</li>
+<li>步骤： <ol>
+<li>提前预习</li>
+<li>浏览目录</li>
+<li>老师提醒的重点</li>
+<li>重要思想： 总结、回顾、结论之类的。</li>
+<li>列表</li>
+<li>术语和定义</li>
+<li>例子：例子的细节，运用了什么方法和用这个方法的理由</li>
+</ol>
+</li>
+<li>笔记方法（可以混搭）：<ol>
+<li>康纳尔法：<ol>
+<li>右侧讲义</li>
+<li>左侧线索：<ol>
+<li>上课不清楚的点</li>
+<li>复习时能有效提示的问题</li>
+<li>底栏下课总结</li>
+</ol>
+</li>
+</ol>
+</li>
+<li>大纲法</li>
+<li>思维导图</li>
+</ol>
+</li>
+</ol>
+<h2 id="阅读"><a href="#阅读" class="headerlink" title="阅读"></a>阅读</h2><p>主要教材</p>
+<p>补充阅读</p>
+<p>略读：保留主要的观点、术语、重要信息——理解或文章的特殊标记。</p>
+<p>划重点：摩斯密码法：</p>
+<p>表重要的观点的句子用  <strong>.</strong>  </p>
+<p>解释之前观点的句子用  <strong>—</strong> </p>
+<p>主动阅读（SQ3R）：</p>
+<ol>
+<li><p>浏览：快速过一遍看看开头概述、标题、章节回顾</p>
+</li>
+<li><p>提问：在你的阅读前有针对性的提几个问题，阅读完后检查能否解答</p>
+</li>
+<li><p>阅读</p>
+</li>
+<li><p>复述</p>
+</li>
+<li><p>总结或记笔记：</p>
+<ol>
+<li><p>总结用来理解重要概念</p>
+</li>
+<li><p>详细的笔记适合干活较多的阅读</p>
+</li>
+</ol>
+</li>
+</ol>
+<h2 id="记忆"><a href="#记忆" class="headerlink" title="记忆"></a>记忆</h2><p>记忆事实性的比抽象的概念要容易</p>
+<p>联想记忆：结合已有记忆记新的东西</p>
+<p>学习间隔：</p>
+<table>
+<thead>
+<tr>
+<th>第几次复习</th>
+<th>时间间隔（天）</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>第一次</td>
+<td>1</td>
+</tr>
+<tr>
+<td>第二次</td>
+<td>3</td>
+</tr>
+<tr>
+<td>第三次</td>
+<td>7</td>
+</tr>
+<tr>
+<td>第四次</td>
+<td>14</td>
+</tr>
+<tr>
+<td>第五次</td>
+<td>30</td>
+</tr>
+</tbody>
+</table>
+<p>时间间隔的自我调整方法：记忆对错判断 复习记忆错误间隔一天再次复习</p>
+<p>复习记忆正确后移复习时间间隔</p>
+<h2 id="计划与整理"><a href="#计划与整理" class="headerlink" title="计划与整理"></a>计划与整理</h2><p>计划模式</p>
+<p>机器模式：用于备考、作业、刷题，这个时候要求在没打扰的干净整洁的环境完成</p>
+<ol>
+<li>设定一个明确的目标</li>
+<li>创造一个优良的环境</li>
+</ol>
+<p>构建资源管理器用于存储 任务 、 事件 、灵感、用于快速提取工作中可能用到的资源</p>
+<p>构建任务管理器：用于明确你接下要做什么，有些时候你忘记你要做什么的时候请查看这里</p>
+<p>注意：保持良好的结构  可以采取树形结构</p>
+<p>在日历用颜色标记事件这样可以对自己的目前生活状态有个清晰的认知</p>
+<p>快速捕捉能力</p>
+<p>快速的接受理解将相应的信息归档到相应位置</p>
+<p>如果无法快速理解，先记到备忘录上过会儿整理。</p>
+<p>日计划：列举计划好的事和你想要完成的任务。任务分类：简单的，能短时间完成的任务 整合在一起快速完成，留出充裕的时间给有挑战的任务</p>
+<p>周计划：每周末对下周进行一个计划，对上一周进行总结。对比计划的实际完成度，发现问题，在以后尽量的避免。</p>
+<p>长期计划：例如四级英语考试 提前一个月把计划分撒到各个周</p>
+<p>注：对于一些重复的事件类如生日，请添加到你的日历中。以防忘记</p>
+<h2 id="注意力"><a href="#注意力" class="headerlink" title="注意力"></a>注意力</h2><p>一次专心一个任务，不要切换，会分散注意力。</p>
+<p>一个任务的注意力有时效性，没过一段时间放松一下，30分钟/5分钟</p>
+<p>选择一个适合工作学习的地方，尽量简单，不要有过多分散注意力的东西。</p>
+<p>任务细分，细分后剔除该阶段不需要的东西，避免影响当前阶段工作</p>
+<p>在工作和学习的时候训练忍受枯燥学习和抗拒新鲜事物的能力</p>
+<p>高质量的工作 = 时间 × 注意力 </p>
+<h2 id="拖延症"><a href="#拖延症" class="headerlink" title="拖延症"></a>拖延症</h2><p>分解任务：过于庞大的项目分解为小项目按部就班的继续下去</p>
+<p>奖励机制：完成任务的奖励机制，根据不同的任务难度设置不同的任务奖励</p>
+<p>高密度娱乐：找一个时间段玩，而不是一直处于摸鱼状态</p>
+<h2 id="备考"><a href="#备考" class="headerlink" title="备考"></a>备考</h2><p>备考资料收集：</p>
+<ol>
+<li>学习的笔记</li>
+<li>考试的重点</li>
+<li>固定的题型</li>
+</ol>
+<p>情景演练：</p>
+<ol>
+<li>模拟考试环境，考试时间。</li>
+<li>准备小抄（呃，最好不在考场使用）</li>
+</ol>
+<h2 id="对待焦虑"><a href="#对待焦虑" class="headerlink" title="对待焦虑"></a>对待焦虑</h2><p>调整心态：当作一次挑战。</p>
+<p>主动回忆：回忆过去的失败经历和应对方法</p>
+<p>了解：对于未知的事物尽量去了解它，了解的越多你的恐惧越小</p>
+<h2 id="写作（论文）"><a href="#写作（论文）" class="headerlink" title="写作（论文）"></a>写作（论文）</h2><p>写作前：</p>
+<ol>
+<li>做一个关于该话题的思维导图</li>
+<li>列出想要表达的点</li>
+<li>思考改用什么外部资料证明论点</li>
+</ol>
+<p>查资料：</p>
+<ol>
+<li>维基百科或百度百科底部的引用部分（知乎之类的）</li>
+<li>谷歌学术，EBSCO期刊数据库科普书籍的引用参考文献</li>
+<li>注释材料：注释能论证论点的材料（论文中每个主要论点至少要有两个来源，次要论点至少要有一个）</li>
+</ol>
+<p>初稿：</p>
+<ol>
+<li>先直接书写，不用管审核限制。</li>
+<li>将初稿写在不同于最终定稿的位置。</li>
+</ol>
+<p>编辑文章</p>
+<ol>
+<li>内容编辑：<ol>
+<li>论据是否能支持论点</li>
+<li>逻辑是否通顺</li>
+<li>是否可以精简</li>
+</ol>
+</li>
+<li>技术编辑：<ol>
+<li>字词句错误</li>
+<li>格式错误</li>
+<li>读起来不通顺的句子</li>
+</ol>
+</li>
+</ol>
+<p>反馈：</p>
+<p>1.给一部分人看初稿，一部分人看终稿。检查初稿中的问题终稿是否得到解决</p>
+<p>最终校对：</p>
+<p>1.打印文章，动笔改动</p>
+<p>2.朗读，发现问题。</p>
+<h2 id="锻炼身体"><a href="#锻炼身体" class="headerlink" title="锻炼身体"></a>锻炼身体</h2><p>工作学习前可以先快走一会儿提高大脑活跃度。</p>
+<p>平常应保持常规的心肺级运动。——散步</p>
 
             </div>
             <hr>
@@ -554,9 +698,9 @@
             </div>
             <br>
             <span xmlns:dct="http://purl.org/dc/terms/" href="http://purl.org/dc/dcmitype/Text" property="dct:title" rel="dct:type">
-                    《hexo+github 搭建个人博客》
+                    《学习技能》
                 </span> 由
-            <a xmlns:cc="http://creativecommons.org/ns#" href="/2019/08/06/hexo-github-搭建个人博客界/" property="cc:attributionName" rel="cc:attributionURL">
+            <a xmlns:cc="http://creativecommons.org/ns#" href="/2019/10/31/学习技能/" property="cc:attributionName" rel="cc:attributionURL">
                 笑笑魂
             </a> 采用
             <a rel="license" href="https://creativecommons.org/licenses/by/4.0/deed.zh">
@@ -619,30 +763,40 @@
         
         <div class="article col s12 m6 overflow-policy" data-aos="fade-up">
             <div class="article-badge left-badge text-color">
-                <i class="fa fa-chevron-left"></i>&nbsp;上一篇</div>
+                <i class="fa fa-dot-circle-o"></i>&nbsp;本篇
+            </div>
             <div class="card">
-                <a href="/2019/08/07/Termux-搭建http服务/">
+                <a href="/2019/10/31/学习技能/">
                     <div class="card-image">
                         
-                        <img src="https://tc-1258808238.cos.ap-chengdu.myqcloud.com/050.jpg" class="responsive-img" alt="Termux 搭建http服务">
+                        <img src="https://tc-1258808238.cos.ap-chengdu.myqcloud.com/068.jpg" class="responsive-img" alt="学习技能">
                         
-                        <span class="card-title">Termux 搭建http服务</span>
+                        <span class="card-title">学习技能</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
                     <div class="summary block-with-text">
                         
-                            ## 
+                            学习技能记笔记
+注意事项：
+用你自己能够理解的话记笔记。
+用于考试和以后应用的信息。
 
-一、Termux是个啥？Termux是一个Android的linux模拟器，能在手机模拟linux环境。
-二、准备工作首先国内使用要换源，这里使用的是清华源，这是官方文档 也可以直接复制代码
-12345sed -i 's@^\(d
+
+步骤： 
+提前预习
+浏览目录
+老师提醒的重点
+重要思想： 总结、回顾、结论之类的。
+列表
+术语和定义
+例子：例子的细节，运用了什么方法和用这个方法的理
                         
                     </div>
                     <div class="publish-info">
-                        <span class="publish-date">
-                            <i class="fa fa-clock-o fa-fw icon-date"></i>2019-08-07
-                        </span>
+                            <span class="publish-date">
+                                <i class="fa fa-clock-o fa-fw icon-date"></i>2019-10-31
+                            </span>
                         <span class="publish-author">
                             
                             <i class="fa fa-user fa-fw"></i>
@@ -651,11 +805,12 @@
                         </span>
                     </div>
                 </div>
+
                 
                 <div class="card-action article-tags">
                     
-                    <a href="/tags/Termux/" target="_blank">
-                        <span class="chip bg-color">Termux</span>
+                    <a href="/tags/学习/" target="_blank">
+                        <span class="chip bg-color">学习</span>
                     </a>
                     
                 </div>
@@ -669,28 +824,24 @@
                 下一篇&nbsp;<i class="fa fa-chevron-right"></i>
             </div>
             <div class="card">
-                <a href="/2019/05/15/四级备考/">
+                <a href="/2019/09/30/python-函数/">
                     <div class="card-image">
                         
-                        <img src="https://tc-1258808238.cos.ap-chengdu.myqcloud.com/008.jpg" class="responsive-img" alt="四级备考">
+                        <img src="https://tc-1258808238.cos.ap-chengdu.myqcloud.com/068.jpg" class="responsive-img" alt="python-函数">
                         
-                        <span class="card-title">四级备考</span>
+                        <span class="card-title">python-函数</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
                     <div class="summary block-with-text">
                         
-                            
-及格要求四級分數分佈（聽力35%閱讀35%翻譯和寫作30%）
-主要目的複習聽力， 其次閱讀。
-聽力訓練真题录音单曲循环+尽力识别后对照听力原文（也叫听力脚本）。
-1.先将真题段落反复循环播放。
-2.验看听力脚本（脚本就是听力的对白原文文字
+                            1234def cyclider_volume(height,radius):    pi =3.1415926    return height * pi * radius ** 2cylinder_volume(10,3)
+
                         
                     </div>
                     <div class="publish-info">
                             <span class="publish-date">
-                                <i class="fa fa-clock-o fa-fw icon-date"></i>2019-05-15
+                                <i class="fa fa-clock-o fa-fw icon-date"></i>2019-09-30
                             </span>
                         <span class="publish-author">
                             
@@ -703,8 +854,8 @@
                 
                 <div class="card-action article-tags">
                     
-                    <a href="/tags/exam/" target="_blank">
-                        <span class="chip bg-color">exam</span>
+                    <a href="/tags/code/" target="_blank">
+                        <span class="chip bg-color">code</span>
                     </a>
                     
                 </div>
