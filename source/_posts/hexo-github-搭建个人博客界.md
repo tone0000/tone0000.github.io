@@ -2,9 +2,9 @@
 title: hexo+github 搭建个人博客
 date: 2019-08-06 19:15:25
 tags: hexo
-img: https://tc-1258808238.cos.ap-chengdu.myqcloud.com/004.jpg
+img: https://i.loli.net/2020/02/19/jghCIi1kO2nrXm7.jpg
 cover: true
-coverImg: https://tc-1258808238.cos.ap-chengdu.myqcloud.com/004.jpg
+coverImg: https://i.loli.net/2020/02/19/jghCIi1kO2nrXm7.jpg
 ---
 
 ## 

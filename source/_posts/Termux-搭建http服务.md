@@ -2,9 +2,9 @@
 title: Termux 搭建http服务
 date: 2019-08-07 10:07:50
 tags: Termux
-img: https://tc-1258808238.cos.ap-chengdu.myqcloud.com/050.jpg
+img: https://i.loli.net/2020/02/19/G7L9mp5BnTds8Xu.jpg
 cover: true
-coverImg: https://tc-1258808238.cos.ap-chengdu.myqcloud.com/050.jpg
+coverImg: https://i.loli.net/2020/02/19/G7L9mp5BnTds8Xu.jpg
 ---
 
 ## 

@@ -4,9 +4,10 @@
 
 <head><meta name="generator" content="Hexo 3.8.0">
     <meta charset="utf-8">
-    <meta name="keywords" content="python-函数, 人间不值得">
-    <meta name="description" content="1234def cyclider_volume(height,radius):    pi =3.1415926    return height * pi * radius ** 2cylinder_volume(10,3)
-">
+    <meta name="keywords" content="搭建云端jupyter lab, 人间不值得">
+    <meta name="description" content="jupyter lab 搭建与配置下载并安装Anaconda国内镜像站清华 安装包 和 源  
+下载完后安装 windows 点击 linux bash  MAC chmod +x name(添加执行权限然后运行) ./ name
+安装一路">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
     <meta name="renderer" content="webkit|ie-stand|ie-comp">
@@ -14,7 +15,7 @@
     <meta name="format-detection" content="telephone=no">
     <meta name="apple-mobile-web-app-capable" content="yes">
     <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
-    <title>python-函数 | 人间不值得</title>
+    <title>搭建云端jupyter lab | 人间不值得</title>
     <link rel="icon" type="image/png" href="/favicon.png">
 
     <link rel="stylesheet" type="text/css" href="/libs/awesome/css/font-awesome.min.css">
@@ -198,13 +199,13 @@
 
 
 
-<div class="bg-cover pd-header post-cover" style="background-image: url('https://tc-1258808238.cos.ap-chengdu.myqcloud.com/068.jpg')">
+<div class="bg-cover pd-header post-cover" style="background-image: url('https://tc-1258808238.cos.ap-chengdu.myqcloud.com/Heroic Alliance Wallpaper[]36.jpg')">
     <div class="container">
         <div class="row">
             <div class="col s12 m12 l12">
                 <div class="brand">
                     <div class="description center-align post-title">
-                        python-函数
+                        搭建云端jupyter lab
                     </div>
                 </div>
             </div>
@@ -315,8 +316,8 @@
                     
                     <div class="article-tag">
                         
-                            <a href="/tags/code/" target="_blank">
-                                <span class="chip bg-color">code</span>
+                            <a href="/tags/教程/" target="_blank">
+                                <span class="chip bg-color">教程</span>
                             </a>
                         
                     </div>
@@ -330,21 +331,21 @@
             <div class="post-info">
                 <div class="post-date info-break-policy">
                     <i class="fa fa-calendar-minus-o fa-fw"></i>发布日期:&nbsp;&nbsp;
-                    2019-09-30
+                    2019-11-03
                 </div>
 
                 
                     
                     <div class="info-break-policy">
                         <i class="fa fa-file-word-o fa-fw"></i>文章字数:&nbsp;&nbsp;
-                        14
+                        538
                     </div>
                     
 
                     
                     <div class="info-break-policy">
                         <i class="fa fa-clock-o fa-fw"></i>阅读时长:&nbsp;&nbsp;
-                        1 分
+                        2 分
                     </div>
                     
                 
@@ -360,7 +361,33 @@
         <hr class="clearfix">
         <div class="card-content article-card-content">
             <div id="articleContent">
-                <figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">cyclider_volume</span><span class="params">(height,radius)</span>:</span></span><br><span class="line">    pi =<span class="number">3.1415926</span></span><br><span class="line">    <span class="keyword">return</span> height * pi * radius ** <span class="number">2</span></span><br><span class="line">cylinder_volume(<span class="number">10</span>,<span class="number">3</span>)</span><br></pre></td></tr></table></figure>
+                <h1 id="jupyter-lab-搭建与配置"><a href="#jupyter-lab-搭建与配置" class="headerlink" title="jupyter lab 搭建与配置"></a>jupyter lab 搭建与配置</h1><h2 id="下载并安装Anaconda"><a href="#下载并安装Anaconda" class="headerlink" title="下载并安装Anaconda"></a>下载并安装Anaconda</h2><p>国内镜像站清华 <a href="https://mirrors.tuna.tsinghua.edu.cn/anaconda/archive/" target="_blank" rel="noopener">安装包</a> 和 <a href="https://mirror.tuna.tsinghua.edu.cn/help/anaconda/" target="_blank" rel="noopener">源</a>  </p>
+<p>下载完后安装 windows <strong>点击</strong> linux <strong>bash</strong>  MAC <strong>chmod</strong> +x name(添加执行权限然后运行) ./ name</p>
+<p>安装一路yes最后询问是否添加到环境变脸默认为no可以选择yes</p>
+<h2 id="安装完毕后配置jupyter-lab"><a href="#安装完毕后配置jupyter-lab" class="headerlink" title="安装完毕后配置jupyter lab"></a>安装完毕后配置jupyter lab</h2><p>在用户目录输入jupyter lab –generate-config</p>
+<p>然后在用户目录 ~/.jupyter 下会生成一个 <strong>jupyter_notebook_config.py</strong>  文件</p>
+<p>配置访问密码  jupyter-notebook password </p>
+<p>用ipython设置hash密码</p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">ipython</span><br><span class="line"><span class="keyword">from</span> notebook.auth <span class="keyword">import</span> passwd</span><br><span class="line">passwd()</span><br><span class="line"><span class="comment"># 输入你自己设置登录JupyterLab界面的密码，</span></span><br><span class="line"><span class="comment"># 然后就会生产下面这样的密码，将它记下来，待会儿用</span></span><br><span class="line"><span class="string">'sha1:b92f3fb7d848:a5d40ab2e26aa3b296ae1faa17aa34d3df351704'</span></span><br></pre></td></tr></table></figure>
+<p>编辑该文件</p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br></pre></td><td class="code"><pre><span class="line">c.NotebookApp.allow_root = <span class="literal">True</span></span><br><span class="line">c.NotebookApp.ip = <span class="string">'0.0.0.0'</span></span><br><span class="line">c.NotebookApp.notebook_dir = <span class="string">u'/root/JupyterLab'</span> </span><br><span class="line">c.NotebookApp.open_browser = <span class="literal">False</span></span><br><span class="line">c.NotebookApp.password = <span class="string">u'sha1:b92f3fb7d848:a5d40ab2e26aa3b296ae1faa17aa34d3df351704'</span></span><br><span class="line">c.NotebookApp.port = <span class="number">8888</span></span><br><span class="line"></span><br><span class="line"><span class="comment"># 解释以上各项</span></span><br><span class="line">允许以root方式运行jupyterlab</span><br><span class="line">允许任意ip段访问</span><br><span class="line">设置jupyterlab页面的根目录</span><br><span class="line">默认运行时不启动浏览器，因为服务器默认只有终端嘛</span><br><span class="line">设置之前生产的哈希密码</span><br><span class="line">设置访问端口</span><br></pre></td></tr></table></figure>
+<p>安装python环境</p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line">sudo apt-get install python-pip python-dev build-essential </span><br><span class="line">sudo pip install --upgrade pip </span><br><span class="line">sudo pip install --upgrade virtualenv </span><br><span class="line">sudo apt-get install python-setuptools python-dev build-essential </span><br><span class="line">sudo easy_install pip </span><br><span class="line">sudo pip install --upgrade virtualenv </span><br><span class="line">sudo apt-get install python3-pip</span><br><span class="line">sudo apt-get install python-pip</span><br><span class="line">sudo pip3 install --upgrade pip</span><br><span class="line">sudo pip2 install --upgrade pip</span><br><span class="line">sudo pip install --upgrade pip</span><br></pre></td></tr></table></figure>
+<p>安装python内核</p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">sudo pip2 install ipykernel</span><br><span class="line">sudo pip3 install ipykernel</span><br></pre></td></tr></table></figure>
+<p>安装nodejs方便安装扩展</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">conda install nodejs</span><br></pre></td></tr></table></figure>
+<p>安装扩展github和toc</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">jupyter labextension install @jupyterlab/github</span><br><span class="line">jupyter labextension install @jupyterlab/toc</span><br></pre></td></tr></table></figure>
+<p>github需要在<strong>jupyter_notebook_config.py</strong> 中添加</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">c.GitHubConfig.access_token = &apos;&lt; YOUR_ACCESS_TOKEN &gt;&apos;</span><br></pre></td></tr></table></figure>
+<p>token在用户设置的develop的token中新增，如果不知道勾什么就都勾上</p>
+<h2 id="安全组选项"><a href="#安全组选项" class="headerlink" title="安全组选项"></a>安全组选项</h2><p>如果选择的服务器有防火墙请在安全组中开放选定端口上文提到的是8888 可以自行设置端口但要在安全组中放行端口</p>
+<p>放行端口设置一般为 0.0.0.0/0  （可访问ip段所有ip）TCP:端口（8888）</p>
+<h2 id="后台运行"><a href="#后台运行" class="headerlink" title="后台运行"></a>后台运行</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">apt install screen</span><br><span class="line">screen -S jupterlab</span><br><span class="line">jupyter lab</span><br></pre></td></tr></table></figure>
+<p> <code>ctrl+A+D</code>退出这个窗口 </p>
+<h2 id="访问"><a href="#访问" class="headerlink" title="访问"></a>访问</h2><p>在浏览器输入公网ip:8888(端口)</p>
+<p>输入密码</p>
 
             </div>
             <hr>
@@ -516,9 +543,9 @@
             </div>
             <br>
             <span xmlns:dct="http://purl.org/dc/terms/" href="http://purl.org/dc/dcmitype/Text" property="dct:title" rel="dct:type">
-                    《python-函数》
+                    《搭建云端jupyter lab》
                 </span> 由
-            <a xmlns:cc="http://creativecommons.org/ns#" href="/2019/09/30/python-函数/" property="cc:attributionName" rel="cc:attributionURL">
+            <a xmlns:cc="http://creativecommons.org/ns#" href="/2019/11/03/搭建云端jupyter-lab/" property="cc:attributionName" rel="cc:attributionURL">
                 笑笑魂
             </a> 采用
             <a rel="license" href="https://creativecommons.org/licenses/by/4.0/deed.zh">
@@ -581,39 +608,29 @@
         
         <div class="article col s12 m6 overflow-policy" data-aos="fade-up">
             <div class="article-badge left-badge text-color">
-                <i class="fa fa-chevron-left"></i>&nbsp;上一篇</div>
+                <i class="fa fa-dot-circle-o"></i>&nbsp;本篇
+            </div>
             <div class="card">
-                <a href="/2019/10/31/学习技能/">
+                <a href="/2019/11/03/搭建云端jupyter-lab/">
                     <div class="card-image">
                         
-                        <img src="https://tc-1258808238.cos.ap-chengdu.myqcloud.com/068.jpg" class="responsive-img" alt="学习技能">
+                        <img src="https://tc-1258808238.cos.ap-chengdu.myqcloud.com/Heroic Alliance Wallpaper[]36.jpg" class="responsive-img" alt="搭建云端jupyter lab">
                         
-                        <span class="card-title">学习技能</span>
+                        <span class="card-title">搭建云端jupyter lab</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
                     <div class="summary block-with-text">
                         
-                            学习技能记笔记
-注意事项：
-用你自己能够理解的话记笔记。
-用于考试和以后应用的信息。
-
-
-步骤： 
-提前预习
-浏览目录
-老师提醒的重点
-重要思想： 总结、回顾、结论之类的。
-列表
-术语和定义
-例子：例子的细节，运用了什么方法和用这个方法的理
+                            jupyter lab 搭建与配置下载并安装Anaconda国内镜像站清华 安装包 和 源  
+下载完后安装 windows 点击 linux bash  MAC chmod +x name(添加执行权限然后运行) ./ name
+安装一路
                         
                     </div>
                     <div class="publish-info">
-                        <span class="publish-date">
-                            <i class="fa fa-clock-o fa-fw icon-date"></i>2019-10-31
-                        </span>
+                            <span class="publish-date">
+                                <i class="fa fa-clock-o fa-fw icon-date"></i>2019-11-03
+                            </span>
                         <span class="publish-author">
                             
                             <i class="fa fa-user fa-fw"></i>
@@ -622,11 +639,12 @@
                         </span>
                     </div>
                 </div>
+
                 
                 <div class="card-action article-tags">
                     
-                    <a href="/tags/学习/" target="_blank">
-                        <span class="chip bg-color">学习</span>
+                    <a href="/tags/教程/" target="_blank">
+                        <span class="chip bg-color">教程</span>
                     </a>
                     
                 </div>
@@ -640,27 +658,32 @@
                 下一篇&nbsp;<i class="fa fa-chevron-right"></i>
             </div>
             <div class="card">
-                <a href="/2019/08/07/Termux-搭建http服务/">
+                <a href="/2019/11/02/身份信息查询/">
                     <div class="card-image">
                         
-                        <img src="https://tc-1258808238.cos.ap-chengdu.myqcloud.com/050.jpg" class="responsive-img" alt="Termux 搭建http服务">
+                        <img src="https://tc-1258808238.cos.ap-chengdu.myqcloud.com/001.jpg" class="responsive-img" alt="身份信息查询">
                         
-                        <span class="card-title">Termux 搭建http服务</span>
+                        <span class="card-title">身份信息查询</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
                     <div class="summary block-with-text">
                         
-                            ## 
-
-一、Termux是个啥？Termux是一个Android的linux模拟器，能在手机模拟linux环境。
-二、准备工作首先国内使用要换源，这里使用的是清华源，这是官方文档 也可以直接复制代码
-12345sed -i 's@^\(d
+                            常见流程：
+寻找对方qq号
+通过忘记QQ密码验证手机号
+贴吧高级搜索QQ号
+社工库查询QQ号信息（可能会加密）
+很多人都喜欢把自己的ID/姓名/手机号放到自己的密码里面 
+百度谷歌搜索他的ID 
+腾讯微博 
+QQ邮箱  搜索支付宝  
+支付
                         
                     </div>
                     <div class="publish-info">
                             <span class="publish-date">
-                                <i class="fa fa-clock-o fa-fw icon-date"></i>2019-08-07
+                                <i class="fa fa-clock-o fa-fw icon-date"></i>2019-11-02
                             </span>
                         <span class="publish-author">
                             
@@ -673,8 +696,8 @@
                 
                 <div class="card-action article-tags">
                     
-                    <a href="/tags/Termux/" target="_blank">
-                        <span class="chip bg-color">Termux</span>
+                    <a href="/tags/社工/" target="_blank">
+                        <span class="chip bg-color">社工</span>
                     </a>
                     
                 </div>

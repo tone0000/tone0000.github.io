@@ -2,9 +2,9 @@
 title: 搭建云端jupyter lab
 date: 2019-11-03 15:50:47
 tags: 教程
-img: https://tc-1258808238.cos.ap-chengdu.myqcloud.com/Heroic Alliance Wallpaper[]36.jpg
+img: https://i.loli.net/2020/02/19/s3pfUKhXOGyqnkA.jpg
 cover: true
-coverImg: https://tc-1258808238.cos.ap-chengdu.myqcloud.com/Heroic Alliance Wallpaper[]36.jpg
+coverImg: https://i.loli.net/2020/02/19/s3pfUKhXOGyqnkA.jpg
 ---
 
 # jupyter lab 搭建与配置
