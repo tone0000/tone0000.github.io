@@ -75,13 +75,34 @@
     <link href="/2022/07/19/%E5%B7%A5%E4%BD%9C%E6%97%A5%E5%BF%97/"/>
     <url>/2022/07/19/%E5%B7%A5%E4%BD%9C%E6%97%A5%E5%BF%97/</url>
     
-    <content type="html"><![CDATA[<p><strong>第一周：</strong>参与学习了魔镜产品，云桌面，云主机等产品的学习；参与了雪亮工程验收工作。</p><p><strong>第二周：</strong>学习了解天翼安全大脑的相关知识，为周六的产品宣讲会提前准备；参与了对于岳池智慧酒店的方案设计、项目报价；周五同部门同事一起为宣讲会布置会场学习到了举办宣讲会的经验；周六在宣讲会中为客户介绍产品功能。</p><p><strong>第三周：</strong>学习了天翼4.0的相关产品和也解决方案，同北辰景山学校负责网络机房的负责人进行了需求的了解。参与对交通管理局解决方案中对产品天翼安全大脑，魔盾-舆情云的功能、参数的编写。</p>]]></content>
+    <content type="html"><![CDATA[<h1 id="工作日志"><a href="#工作日志" class="headerlink" title="工作日志"></a>工作日志</h1><h2 id="云中台轮岗总结（7月-8月）"><a href="#云中台轮岗总结（7月-8月）" class="headerlink" title="云中台轮岗总结（7月-8月）"></a>云中台轮岗总结（7月-8月）</h2><h3 id="2022年7月"><a href="#2022年7月" class="headerlink" title="2022年7月"></a>2022年7月</h3><p><strong>第一周：</strong>参与学习了魔镜产品，云桌面，云主机等产品的学习；参与了雪亮工程验收工作。</p><p><strong>第二周：</strong>学习了解天翼安全大脑的相关知识，为周六的产品宣讲会提前准备；参与了对于岳池智慧酒店的方案设计、项目报价；周五同部门同事一起为宣讲会布置会场学习到了举办宣讲会的经验；周六在宣讲会中为客户介绍产品功能。</p><p><strong>第三周：</strong>学习了天翼4.0的相关产品和也解决方案，同北辰景山学校负责网络机房的负责人进行了需求的了解。参与对交通管理局解决方案中对产品天翼安全大脑，魔盾-舆情云的功能、参数的编写。</p><p><strong>第四周：</strong>参与公司提倡的创新活动，编写招标网脚本，用于对招标网中涉及电信公司产品和业务的招标信息进行提取和邮件通知相关人员。和客户经理去交通局同客户沟通产品功能。</p><p><strong>7月总结：</strong>在本月的工作和学习中我收获了对公司的产品了解，对云中台的部门职责：技术支撑，项目运作，招投标，控标，项目交付等职责。在生活中也感受到了公司对我的关心和照顾，省公司对员工的奖励，即使我们是刚刚到公司试用期员工，也是相同的待遇，还用工会对我们的高温防护，防晒服，防中暑的药品等都让我感到电信大家庭的温暖。我将怀这份感恩继续努力的为公司贡献自己一份力量。</p><h3 id="2022年8月"><a href="#2022年8月" class="headerlink" title="2022年8月"></a>2022年8月</h3><p><strong>第一周：</strong>学习了如何查看标书，如何填写响应文件。制作了招标网的脚本，用于导出招标网的文件和内容到EXCEL以及网站标书更新提示。在党群的领导指导下参与了广安文明城市复查的志愿者活动，在活动中我和同事一起对巡逻区域的不文明现象进行了纠正，像是乱停乱放的电瓶车，地面上的垃圾的。</p>]]></content>
     
     
     
     <tags>
       
       <tag>work-log</tag>
+      
+    </tags>
+    
+  </entry>
+  
+  
+  
+  <entry>
+    <title>power automate Desktop 1 功能介绍</title>
+    <link href="/2022/07/17/power-automate-1-%E5%8A%9F%E8%83%BD%E4%BB%8B%E7%BB%8D/"/>
+    <url>/2022/07/17/power-automate-1-%E5%8A%9F%E8%83%BD%E4%BB%8B%E7%BB%8D/</url>
+    
+    <content type="html"><![CDATA[<h1 id="power-automate-Desktop-1-功能介绍"><a href="#power-automate-Desktop-1-功能介绍" class="headerlink" title="power automate Desktop 1 功能介绍"></a>power automate Desktop 1 功能介绍</h1><h2 id="概述"><a href="#概述" class="headerlink" title="概述"></a>概述</h2><p>机器人流程自动化（PRA）是一种软件技术，可以低代码的构建一个自动化软件机器人，模拟人类行为，与其他软件进行交互，通过屏幕录制捕捉关键步骤完成模仿人类的操作。<br>Power automate Desktop 是 Power platform 旗下用于桌面或工作站用于自动化流程的一款软件对于微软旗下的Office办公套件有更好的适配兼容性，除了对办公软件的的自动化，还可以针对网页以及文件进行操作。</p><h2 id="EXCEL应用"><a href="#EXCEL应用" class="headerlink" title="EXCEL应用"></a>EXCEL应用</h2>]]></content>
+    
+    
+    
+    <tags>
+      
+      <tag>RPA</tag>
+      
+      <tag>Power automate Desktop</tag>
       
     </tags>
     
